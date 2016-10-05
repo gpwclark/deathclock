@@ -8,8 +8,14 @@ Download from https://github.com/gpwclark/deathclock
 
 ## Usage
 
-Input your death date in the death-date function in core.clj
-    $ java -jar deathclock-0.1.0-standalone.jar 
+Input your death date in the death-date function in core.clj.
+To keep it painfully simple this is what I put in ~/.config/i3/i3blocks.conf
+
+```
+[deathclock]
+command=cd /path/to/the/repo/deathclock && lein run
+interval=86400 # is the number of seconds in a day
+```
 
 ## License
 
