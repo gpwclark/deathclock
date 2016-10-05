@@ -7,8 +7,8 @@
 (def mins-in-day 1440)
 
 (defn death-date []
-  "A pretty solid year to die"
-  (t/date-time 2064 05 01))
+  "It's all a joke anyway"
+  (t/date-time 2064 04 01))
 
 (defn curr-time []
   "right now!"
@@ -27,4 +27,4 @@
   (mod (days-until-death) days-in-year))
 
 (defn -main []
-  (print "DEATH IN Y: " (int (years-until-death)) " D: " (int (days-until-death-less-years))))
+  (print "DEATH IN " (int (years-until-death)) " YRS & " (int (days-until-death-less-years)) " DAYS"))
